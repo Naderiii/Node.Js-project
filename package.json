@@ -1,21 +1,30 @@
 {
-  "name": "node.js-project",
+  "name": "mycontacts-backend-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Naderiii/Node.Js-project.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Hediyeh Naderi",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/Naderiii/Node.Js-project/issues"
   },
-  "homepage": "https://github.com/Naderiii/Node.Js-project#readme"
+  "homepage": "https://github.com/Naderiii/Node.Js-project#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
 }
