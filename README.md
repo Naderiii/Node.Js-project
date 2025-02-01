@@ -1,4 +1,4 @@
-# Project Name
+# Management of contact and user APIs using Node.js
 
 ## Description
 This is a Node.js project for managing users and contacts with a database connection.
