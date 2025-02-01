@@ -1,4 +1,4 @@
-# Management of contact and user APIs using Node.js
+# Management Contact and user API with Node.js
 
 ## Description
 This is a Node.js project for managing users and contacts with a database connection.
@@ -32,9 +32,11 @@ Make sure you have the following installed:
 
 Create a `.env` file in the root directory and set the required environment variables:
 ```env
-DB_URI=<your-database-uri>
 PORT=<server-port>
-JWT_SECRET=<your-jwt-secret>
+USERNAME=<your-database-username>
+PASSWORD=<your-database-password>
+CONNECTION_STRING=<your-connection-string>
+ACCESS_TOKEN_SECRET=<your-access-token>
 ```
 
 ## Usage
@@ -57,8 +59,8 @@ project-folder/
 │   ├── contactController.js  # Handles contact-related API requests
 │   ├── userController.js  # Handles user-related API requests
 │-- models/
-│   ├── Contact.js  # Contact schema definition
-│   ├── User.js  # User schema definition
+│   ├── contactModel.js  # Contact schema definition
+│   ├── userModel.js  # User schema definition
 │-- routes/
 │   ├── contactRoutes.js  # Contact API routes
 │   ├── userRoutes.js  # User API routes
