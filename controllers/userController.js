@@ -1,3 +1,5 @@
+const asyncHandler =  require("express-async-handler");
+
 //@desc Register user
 //@route POST /api/users/register
 //@access public
@@ -14,13 +16,13 @@ const loginUser = asyncHandler(async (req, res) => {
 
 //@desc current user
 //@route GET /api/users/current
-//@access public
-const current = asyncHandler(async (req, res) => {
+//@access private
+const currentUser = asyncHandler(async (req, res) => {
   res.json({ message: "Current user information" });
 });
 
 module.exports = {
   registerUser,
   loginUser,
-  current
+  currentUser
 }
